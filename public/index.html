@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f7f9fc">
+  <meta name="description" content="Learn cybersecurity one idea at a time at HexDojo. Start with cryptography through guided readings, interactive labs, and Python exercises.">
+  <title>HexDojo · Learn cybersecurity</title>
+  <script>window.CIPHER_ACCOUNT=null;</script>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <script src="theme.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="game.css">
+  <link rel="stylesheet" href="activities.css">
+  <link rel="stylesheet" href="rotor.css">
+  <link rel="stylesheet" href="account.css">
+  <link rel="stylesheet" href="python-results.css">
+  <link rel="stylesheet" href="python-highlighting.css">
+  <link rel="stylesheet" href="weekly-learning.css">
+  <link rel="stylesheet" href="math.css">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="profile.css">
+  <link rel="stylesheet" href="visitor.css">
+  <link rel="stylesheet" href="ux.css">
+  <link rel="stylesheet" href="network.css">
+  <link rel="stylesheet" href="community.css">
+<script src="module-catalog.js" defer></script>
+<script src="network-catalog.js" defer></script>
+<script src="network.js" defer></script>
+<script src="paths.js" defer></script>
+<script src="auth.js" defer></script>
+<script src="community.js" defer></script>
+<script src="ui.js" defer></script>
+<script src="home.js" defer></script>
+<script src="visitor.js" defer></script>
+</head>
+<body class="platform-home">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="HexDojo home"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4 56 18v28L32 60 18 52M8 42V18l14-8"/><path d="M20 22v20m11-20v20M20 32h11m0-10h7l8 7v6l-8 7h-7"/><path class="brand-terminal" d="M6 48h7v7H6z"/></svg><span>HexDojo<span class="brand-sub">One idea at a time</span></span></a>
+      <button class="btn small" id="nav-toggle" type="button" aria-expanded="false" aria-controls="navigation">Menu</button>
+      <nav id="navigation">
+        <a class="nav-link" href="#home" data-nav="home">Home</a>
+        <a class="nav-link" href="#paths" data-nav="paths">Paths</a>
+        <div class="course-navigation" hidden>
+        <span class="nav-course-label">CRYPTOGRAPHY</span>
+        <a class="nav-link" href="#learn" data-nav="learn">Modules</a>
+        <a class="nav-link" href="#labs" data-nav="labs">Interactive labs <span class="nav-count">14</span></a>
+        <a class="nav-link" href="#python" data-nav="python">Python lessons</a>
+        <a class="nav-link" href="#review" data-nav="review">Recall practice</a>
+        <details class="nav-tools" id="nav-tools"><summary>Tools and planning</summary>
+          <a class="nav-link" href="#plan" data-nav="plan">Planning checklist</a>
+          <a class="nav-link" href="#quests" data-nav="quests">Quest board</a>
+          <a class="nav-link" href="#arcade" data-nav="arcade">Challenge arcade</a>
+          <a class="nav-link" href="#attacks" data-nav="attacks">Attack guide</a>
+          <a class="nav-link" href="#proof" data-nav="proof">Proof coach</a>
+          <a class="nav-link" href="#shelf" data-nav="shelf">Reading shelf</a>
+        </details>
+        </div>
+        <div class="network-navigation" hidden>
+          <span class="nav-course-label">NETWORK SECURITY</span>
+          <a class="nav-link" href="#network" data-nav="network">Modules</a>
+          <a class="nav-link" href="#network/0/workshop" data-nav="network-workshop">VM workshop</a>
+        </div>
+        <a class="nav-link" href="#community" data-nav="community">Community</a>
+        <a class="nav-link" href="#support" data-nav="support">Support</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <a class="sidebar-game" id="side-game" href="#quests" aria-label="Your XP and study level"></a>
+        <div class="book-mini"><strong>Katz & Lindell</strong><span>Introduction to Modern<br>Cryptography · 3rd edition</span></div>
+        <div class="side-progress"><span id="progress-label">0 / 16 modules complete</span><div class="progress-track"><div id="progress-fill"></div></div></div>
+        <small id="storage-status" role="status">Loading account progress…</small>
+      </div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar"><nav id="breadcrumb" aria-label="Breadcrumb"><span aria-current="page">Home</span></nav><div class="topbar-actions"><a class="xp-counter" id="top-xp" href="#quests">0 XP</a><span class="pace-chip">5.5 hours / module</span><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">Dark mode</button><button class="btn small account-toggle" id="account-toggle" type="button" data-nav="profile"><span id="account-label">Profile</span> <span class="sync-indicator" id="sync-status">Loading</span></button></div></header>
+      <main id="main" tabindex="-1"></main>
+      <footer>HexDojo · Learn. Experiment. Understand.<span class="footer-community"><a href="#community">Community</a><a href="#support">Support HexDojo</a></span></footer>
+    </div>
+  </div>
+  <dialog class="account-dialog" id="account-panel" aria-labelledby="account-title">
+    <div class="dialog-top"><h2 id="account-title">Account settings</h2><button class="btn small dialog-close" id="account-close" type="button">Close</button></div>
+    <p id="account-name">Your ChatGPT account</p><p id="account-email"></p>
+    <p id="account-summary">Your progress, code, notes, and badges sync to your account. Work waiting to sync has a recovery copy on this device.</p>
+    <p id="account-status" role="status">Loading account progress…</p><small id="account-saved">No account save yet.</small>
+    <div class="button-row"><button class="btn primary" id="account-save" type="button">Sync now</button><button class="btn" id="account-reload" type="button">Reload</button><a class="btn" id="account-signin" href="/signin-with-chatgpt?return_to=%2F" target="_top" hidden>Sign in again</a><a class="btn subtle" id="account-signout" href="/signout-with-chatgpt?return_to=%2F" target="_top">Sign out</a></div>
+    <details class="details account-backups"><summary>Optional backups</summary><div>
+      <p>Sign-in restores your saved progress automatically. These tools are optional if you want an extra copy.</p>
+      <button class="text-button" id="export-progress" disabled>↓ Download a backup</button>
+      <button class="text-button" id="restore-progress" type="button" disabled>Restore a backup file</button>
+      <input type="file" accept="application/json,.json" id="import-progress" aria-label="Choose a progress backup" hidden disabled>
+    </div></details>
+  </dialog>
+  <dialog class="account-dialog" id="restore-confirm" aria-labelledby="restore-title" aria-describedby="restore-description">
+    <h2 id="restore-title">Restore this backup?</h2>
+    <p id="restore-description">This replaces your account’s progress, notes, and code. Cancel to keep your current work.</p>
+    <p class="restore-filename" id="restore-filename"></p>
+    <div class="button-row"><button class="btn" id="restore-cancel" type="button" autofocus>Cancel</button><button class="btn primary" id="restore-accept" type="button">Restore backup</button></div>
+  </dialog>
+  <dialog class="account-dialog" id="note-conflicts" aria-labelledby="conflict-title">
+    <h2 id="conflict-title">Choose which work to keep</h2>
+    <p>This work changed on two devices. Both versions are shown below. You can download them before choosing the version to save.</p>
+    <div id="conflict-notes"></div>
+    <div class="button-row"><button class="btn primary" id="conflict-resolve" type="button">Save chosen versions</button><button class="btn" id="conflict-export" type="button">Download both versions</button></div>
+  </dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <noscript>This companion needs JavaScript for its interactive lessons. You can still <a href="study-plan.md">download the study plan</a>.</noscript>
+</body>
+</html>

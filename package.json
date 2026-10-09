@@ -1,0 +1,11 @@
+{
+  "name": "hexdojo-public",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "test": "node tools/check-website.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

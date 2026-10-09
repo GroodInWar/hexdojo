@@ -1,0 +1,39 @@
+:root{--read-ink:#1d4ed8;--read-bg:#edf3ff;--read-line:#b7cbf5;--python-ink:#6d28d9;--python-bg:#f3edff;--python-line:#d2bdf4;--attack-ink:#9a3412;--attack-bg:#fff1e8;--attack-line:#efc0a6;--experiment-ink:#0e6475;--experiment-bg:#eefbff;--experiment-line:#a4d6e3;--proof-ink:#85601b;--proof-bg:#fff6df;--proof-line:#e7cc8d;--review-ink:#9d1757;--review-bg:#fdf0f6;--review-line:#e9b5cd}
+:root[data-theme="dark"]{--read-ink:#9dc3ff;--read-bg:#14243c;--read-line:#355d95;--python-ink:#c6b3ff;--python-bg:#251c3d;--python-line:#64528c;--attack-ink:#ffbd92;--attack-bg:#372316;--attack-line:#805138;--experiment-ink:#77d5ee;--experiment-bg:#112b34;--experiment-line:#326879;--proof-ink:#e9c474;--proof-bg:#322816;--proof-line:#786437;--review-ink:#f6a8d0;--review-bg:#351c2d;--review-line:#7e4864}
+[data-activity="read"]{--activity-ink:var(--read-ink);--activity-bg:var(--read-bg);--activity-line:var(--read-line)}
+[data-activity="python"]{--activity-ink:var(--python-ink);--activity-bg:var(--python-bg);--activity-line:var(--python-line)}
+[data-activity="attack"]{--activity-ink:var(--attack-ink);--activity-bg:var(--attack-bg);--activity-line:var(--attack-line)}
+[data-activity="experiment"]{--activity-ink:var(--experiment-ink);--activity-bg:var(--experiment-bg);--activity-line:var(--experiment-line)}
+[data-activity="proof"]{--activity-ink:var(--proof-ink);--activity-bg:var(--proof-bg);--activity-line:var(--proof-line)}
+[data-activity="review"]{--activity-ink:var(--review-ink);--activity-bg:var(--review-bg);--activity-line:var(--review-line)}
+.activity-tag{display:inline-flex;align-items:center;gap:5px;max-width:100%;width:fit-content;padding:4px 7px;border:1px solid var(--activity-line);border-radius:4px;background:var(--activity-bg);color:var(--activity-ink);font:500 10px/1.5 var(--sans);vertical-align:middle}
+.activity-tag svg{width:13px;height:13px;flex-shrink:0;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.activity-tag span{color:inherit}.activity-tags{display:flex;align-items:center;flex-wrap:wrap;gap:6px}
+.activity-legend{display:flex;align-items:center;flex-wrap:wrap;gap:10px 16px;padding:14px 0;margin:8px 0 22px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.activity-legend>strong{font-size:11px;font-weight:600}.activity-legend>small{font-size:10px}.activity-legend .activity-tags{flex:1}
+.page-heading>.activity-tag,.lab-page-heading .activity-tag{margin-bottom:10px}.page-heading>.eyebrow,.lab-page-heading .eyebrow{display:block}
+.code-detail>.eyebrow,.attack-detail>.eyebrow,.proof-quest>.eyebrow,.lab-quest .eyebrow{display:block;margin-top:10px}.lab-extras>.activity-tag{margin-bottom:10px}
+.week-activity-tags{margin:0 0 14px}.week-code-links{display:grid;grid-template-columns:1fr;gap:8px;margin:17px 0 20px}
+.assignment-card{padding:12px 13px;background:var(--activity-bg);border:1px solid var(--activity-line);border-left:3px solid var(--activity-ink);border-radius:4px;min-width:0}
+.assignment-card h3{font:600 11px/1.5 var(--sans);color:var(--activity-ink);margin:7px 0 3px}.assignment-card p{color:var(--muted);font-size:11px;margin:4px 0 7px}.assignment-card a{color:var(--activity-ink);font-size:11px;font-weight:600}.assignment-card code{overflow-wrap:anywhere}
+.assignment-budget{font-size:10px;margin:0;color:var(--muted)}
+.checklist li[data-activity]{border-left:2px solid var(--activity-line);padding-left:11px}.checklist .activity-tag{display:flex;margin-bottom:5px;color:var(--activity-ink)}.checklist input{accent-color:var(--activity-ink)}
+.mission[data-activity],.activity-block{background:var(--activity-bg);border-color:var(--activity-line)}.mission[data-activity] h3{color:var(--activity-ink)}.mission>.activity-tag{margin-bottom:8px}
+.btn.activity-button{background:var(--activity-bg);border-color:var(--activity-line);color:var(--activity-ink)}.btn.activity-button:hover{border-color:var(--activity-ink);filter:brightness(.97)}
+.activity-link{color:var(--activity-ink)}.activity-link:hover{text-decoration:underline}.chip[data-activity]{color:var(--activity-ink)}
+.lab-card[data-activity]{border-top:2px solid var(--activity-line)}.lab-card>.activity-tag{margin-bottom:13px}
+.lab-quest[data-activity],.proof-quest[data-activity]{background:var(--activity-bg);border-color:var(--activity-line)}.lab-quest h2,.proof-quest h2{margin-top:12px}
+.code-layout[data-activity] .code-choice[aria-current]{background:var(--activity-bg);border-left-color:var(--activity-ink)}
+.code-toolbar[data-activity] .btn{color:var(--activity-ink);border-color:var(--activity-line)}
+.code-inline[data-activity] summary,.puzzle-code[data-activity] summary{color:var(--activity-ink)}.code-inline summary .activity-tag,.puzzle-code summary .activity-tag{margin-right:7px}
+.attack-detail[data-activity]{border-top:3px solid var(--activity-ink)}.attack-diagram[data-activity]{background:var(--activity-bg)}
+.attack-title[data-activity]{color:var(--activity-ink)}.attack-links .activity-link{padding:2px 0}
+.proof-step[data-activity],.recall-card[data-activity]{border-top:3px solid var(--activity-ink)}.proof-step[data-activity] .step-dots button.active{background:var(--activity-ink)}
+.recall-card[data-activity] .recall-answer{background:var(--activity-bg)}.challenge-box>.activity-tag{margin-bottom:8px}
+.puzzle-card[data-activity]{border-top:3px solid var(--activity-ink)}.puzzle-card>.activity-tag{margin-bottom:12px}.puzzle-link.active[data-activity]{background:var(--activity-bg);border-color:var(--activity-ink)}
+.puzzle-reading .activity-link{display:flex;align-items:center;gap:6px}.puzzle-reading .activity-tag{padding:3px 5px}
+.daily-quest>.activity-tag{margin-bottom:10px}.daily-quest>.eyebrow{display:block}
+.quest-card .week-activity-tags{margin-bottom:13px;gap:4px}.quest-card .activity-tag{font-size:9px;padding:3px 5px}.quest-card .activity-tag svg{width:11px;height:11px}
+.skip-link{background:var(--primary);color:var(--primary-text)}
+@media(max-width:650px){.activity-legend{display:block}.activity-legend .activity-tags{margin:9px 0}.activity-legend>small{display:block}.quest-grid{grid-template-columns:1fr}.assignment-card{padding:11px}.puzzle-reading{gap:10px}.activity-tag{font-size:10px}}
+@media print{:root[data-theme]{--read-ink:#1d4ed8;--read-bg:#edf3ff;--read-line:#b7cbf5;--python-ink:#6d28d9;--python-bg:#f3edff;--python-line:#d2bdf4;--attack-ink:#9a3412;--attack-bg:#fff1e8;--attack-line:#efc0a6;--experiment-ink:#0e6475;--experiment-bg:#eefbff;--experiment-line:#a4d6e3;--proof-ink:#85601b;--proof-bg:#fff6df;--proof-line:#e7cc8d;--review-ink:#9d1757;--review-bg:#fdf0f6;--review-line:#e9b5cd}.assignment-card{break-inside:avoid}}

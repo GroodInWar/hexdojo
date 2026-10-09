@@ -1,0 +1,57 @@
+.profile-page{max-width:1040px;margin:36px auto 0;padding-bottom:15px}
+.profile-heading,.profile-section-heading{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.profile-heading{margin-bottom:26px}
+.profile-heading h1{font:normal 2.125rem/1.25 Georgia,serif;letter-spacing:-.5px;margin:0}
+.profile-heading .btn,.profile-page .btn{font-size:.875rem;min-height:42px;padding:10px 16px;border-radius:6px}
+.profile-identity{display:flex;align-items:center;gap:19px;padding:25px 28px;background:var(--panel);border:1px solid var(--line);border-radius:10px}
+.profile-avatar{display:flex;align-items:center;justify-content:center;width:64px;height:64px;flex-shrink:0;border-radius:50%;background:var(--reward-bg);border:1px solid var(--reward-line);color:var(--accent);font:normal 1.625rem Georgia,serif}
+.profile-identity>div{min-width:0}
+.profile-identity h2{font:600 1.125rem/1.5 var(--sans);margin:0 0 3px;overflow-wrap:anywhere}
+.profile-identity p{font-size:.875rem;line-height:1.6;color:var(--muted);overflow-wrap:anywhere;margin:0}
+.profile-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin:25px 0 38px;padding:0 8px}
+.profile-summary>div{min-width:0;border-right:1px solid var(--line);padding-right:22px}
+.profile-summary>div:last-child{border-right:0;padding-right:0}
+.profile-summary dt{font-size:.875rem;color:var(--muted);line-height:1.6}
+.profile-summary dd{font:normal 1.875rem/1.35 Georgia,serif;margin:7px 0}
+.profile-summary .profile-stat-note{font:.75rem/1.65 var(--sans);color:var(--muted);margin:0}
+.profile-section-heading{margin-bottom:20px}
+.profile-section-heading h2{font:normal 1.625rem/1.3 Georgia,serif;margin:0}
+.profile-section-heading>span,.profile-section-heading>a{font-size:.875rem;color:var(--muted)}
+.profile-section-heading>a{color:var(--accent)}
+.profile-badge-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+.profile-page .badge-card,.profile-page .badge-card.course-badge{grid-column:auto;padding:21px 19px;gap:14px;align-items:flex-start;background:var(--panel);border:1px solid var(--line);border-radius:9px;display:flex;min-width:0}
+.profile-page .badge-card.earned{border-color:var(--reward-line)}
+.profile-page .badge-icon,.profile-page .course-badge .badge-icon{width:48px;height:48px;display:flex;align-items:center;justify-content:center;flex-shrink:0;padding:9px;border-radius:50%;border:1px solid var(--line);background:var(--panel2);color:var(--muted)}
+.profile-page .badge-card.earned .badge-icon{background:var(--reward-bg);border-color:var(--reward-line);color:var(--accent)}
+.profile-page .badge-icon svg{width:100%;height:100%;display:block}
+.profile-page .badge-card>div:last-child{min-width:0}
+.profile-page .badge-card h3{font:600 1rem/1.5 var(--sans);margin:0 0 7px;overflow-wrap:normal}
+.profile-page .badge-card p{font-size:.875rem;line-height:1.65}
+.profile-page .badge-card small{font-size:.75rem;line-height:1.65}
+.profile-page .badge-card p{color:var(--muted);margin:0 0 8px}
+.profile-page .badge-card .badge-progress{font-family:var(--sans);font-size:.75rem}
+.badge-card.earned.badge-tone-amber .badge-icon{color:var(--orange)}
+.badge-card.earned.badge-tone-red .badge-icon{color:var(--red)}
+.badge-card.earned.badge-tone-violet .badge-icon{color:var(--purple)}
+.profile-next-badges{margin-top:23px;border-top:1px solid var(--line);padding-top:20px}
+.profile-next-badges>summary{font-size:.875rem;color:var(--muted);cursor:pointer;line-height:1.7}
+.profile-next-badges>summary>span{display:inline-block;margin-left:7px;padding:0 7px;border:1px solid var(--line);border-radius:12px;font-size:.75rem}
+.profile-next-badges .profile-badge-grid{margin-top:20px}
+.profile-empty{padding:29px;background:var(--panel);border:1px dashed var(--line);border-radius:9px}
+.profile-empty h3{font:normal 1.375rem/1.4 Georgia,serif;margin:0 0 10px}
+.profile-empty p{font-size:1rem;line-height:1.7;max-width:580px;color:var(--muted);margin-bottom:19px}
+.profile-page [hidden]{display:none!important}
+.profile-course{margin-top:34px;padding:26px 28px;border:1px solid var(--line);background:var(--panel);border-radius:10px}
+.profile-progress-label{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:.875rem;color:var(--muted);margin-bottom:10px}
+.profile-progress-label strong{font-weight:500;color:var(--accent)}
+.profile-course progress{display:block;width:100%;height:7px;accent-color:var(--accent);border:0;border-radius:4px;overflow:hidden;background:var(--panel2)}
+.profile-course progress::-webkit-progress-bar{background:var(--panel2)}
+.profile-course progress::-webkit-progress-value{background:var(--accent)}
+.profile-course-next{display:flex;align-items:center;justify-content:space-between;gap:25px;margin-top:20px}
+.profile-course-next p{font-size:1rem;line-height:1.7;margin:0}
+.profile-course-next .btn{flex-shrink:0}
+.topbar .account-toggle[aria-current="page"]{border-color:var(--accent);color:var(--accent)}
+@media(max-width:1000px){.profile-badge-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.profile-page{margin-top:25px}.profile-heading{align-items:flex-start;gap:14px;flex-wrap:wrap}.profile-heading h1{font-size:1.875rem}.profile-identity{padding:21px;gap:15px}.profile-avatar{width:54px;height:54px;font-size:1.375rem}.profile-summary{gap:15px;margin:23px 0 30px;padding:0}.profile-summary>div{padding-right:12px}.profile-summary dt{font-size:.75rem}.profile-summary dd{font-size:1.5rem}.profile-summary .profile-stat-note{font-size:.75rem}.profile-badge-grid{grid-template-columns:1fr}.profile-page .badge-card{padding:21px;gap:17px}.profile-page .badge-card p{font-size:.875rem}.profile-course{padding:22px}.profile-course-next{align-items:flex-start;flex-direction:column;gap:16px}.profile-section-heading{gap:15px}.profile-section-heading h2{font-size:1.5rem}.profile-empty{padding:23px}}
+@media(max-width:380px){.profile-summary{grid-template-columns:1fr;gap:17px}.profile-summary>div{border-right:0;border-bottom:1px solid var(--line);padding:0 0 15px}.profile-summary>div:last-child{border-bottom:0;padding-bottom:0}.profile-summary dt{font-size:.875rem}.profile-summary dd{margin:4px 0}}
+@media print{.profile-heading .btn,.profile-course-next .btn{display:none}.profile-identity,.profile-course,.profile-badge-grid .badge-card{break-inside:avoid}}

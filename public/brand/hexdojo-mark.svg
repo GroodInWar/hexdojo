@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">HexDojo</title>
+  <g fill="none" stroke="#1d4ed8" stroke-width="3.5" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M32 4 56 18v28L32 60 18 52M8 42V18l14-8"/>
+    <path d="M20 22v20m11-20v20M20 32h11m0-10h7l8 7v6l-8 7h-7"/>
+  </g>
+  <path fill="#1d4ed8" d="M6 48h7v7H6z"/>
+</svg>

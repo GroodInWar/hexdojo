@@ -1,7 +1,7 @@
 'use strict';
 (() => {
   // Enable only destinations that have been verified by the maintainer.
-  const config=Object.freeze({owner:'GroodInWar',repository:'https://github.com/GroodInWar/hexdojo',labsRepository:'https://github.com/GroodInWar/hexdojo-labs',sponsors:null,privateReporting:true});
+  const config=Object.freeze({owner:'GroodInWar',repository:'https://github.com/GroodInWar/hexdojo',labsRepository:'https://github.com/GroodInWar/hexdojo-labs',sponsors:'https://github.com/sponsors/GroodInWar',privateReporting:true});
   const esc=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   function githubURL(value,kind){
     if(typeof value!=='string')return null;
